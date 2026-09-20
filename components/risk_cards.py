@@ -40,7 +40,7 @@ def render_status_banner(status_info: Dict[str, Any]) -> None:
     else:
         badge_html = f'<span class="sf-badge-offline">{status_text}</span>'
 
-    st.markdown(f"""
+    st.html(f"""
     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 10px;">
         <div style="display: flex; align-items: center; gap: 12px;">
             {badge_html}
