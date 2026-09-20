@@ -87,11 +87,11 @@ def render_risk_gauge_panel(
         </div>
         """
 
-     delay_block = ""
+         delay_block = ""
     if delay_min is not None:
         delay_str = f"+{delay_min} min" if delay_min > 0 else "0 min"
         delay_block = f"""
-        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 8px; padding: 0.6rem 1rem; text-align: center;">
+        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 12px; padding: 12px; margin-top: 10px;">
             <div style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Traffic Delay</div>
             <div style="font-size: 1.3rem; font-weight: 700; color: {color};">{delay_str}</div>
             <div style="font-size: 0.65rem; color: #64748B;">Over free flow</div>
