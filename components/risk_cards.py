@@ -108,7 +108,7 @@ def render_risk_gauge_panel(
         </div>
         """
 
-    st.markdown(f"""
+    st.html(f"""
     <div class="sf-glass-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
             <div style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; color: #94A3B8; text-transform: uppercase;">
@@ -155,4 +155,4 @@ def render_why_box(reasons: List[str]) -> None:
             {items_html}
         </ul>
     </div>
-    """, unsafe_allow_html=True)
+    """)
