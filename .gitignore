@@ -1,0 +1,27 @@
+# Secrets and environment variables
+.env
+.env.local
+*.env
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# SQLite databases (local runtime storage)
+database/smartflow.db
+*.sqlite3
+*.db-journal
+
+# ML models and temporary files
+models/*.joblib
+!models/model_metadata.json
+
+# Streamlit config
+.streamlit/secrets.toml
+
+# OS artifacts
+Thumbs.db
+.DS_Store

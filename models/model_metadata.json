@@ -1,0 +1,90 @@
+{
+  "best_model_name": "Random Forest Classifier",
+  "accuracy": 0.944,
+  "precision": 0.9437,
+  "recall": 0.944,
+  "f1_score": 0.9438,
+  "confusion_matrix": [
+    [
+      468,
+      14,
+      0
+    ],
+    [
+      20,
+      202,
+      10
+    ],
+    [
+      0,
+      12,
+      274
+    ]
+  ],
+  "classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH"
+  ],
+  "feature_importances": {
+    "hour": 0.2275,
+    "day_of_week": 0.021,
+    "is_weekend": 0.0104,
+    "temperature": 0.0317,
+    "precipitation": 0.0378,
+    "vehicle_count": 0.4648,
+    "free_flow_speed": 0.0616,
+    "road": 0.0508,
+    "weather": 0.0944
+  },
+  "training_samples_count": 5000,
+  "trained_at": "2026-09-20 16:45:45",
+  "models_comparison": {
+    "Random Forest": {
+      "accuracy": 0.944,
+      "precision": 0.9437,
+      "recall": 0.944,
+      "f1_score": 0.9438,
+      "confusion_matrix": [
+        [
+          468,
+          14,
+          0
+        ],
+        [
+          20,
+          202,
+          10
+        ],
+        [
+          0,
+          12,
+          274
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 0.94,
+      "precision": 0.9409,
+      "recall": 0.94,
+      "f1_score": 0.9403,
+      "confusion_matrix": [
+        [
+          465,
+          17,
+          0
+        ],
+        [
+          17,
+          206,
+          9
+        ],
+        [
+          0,
+          17,
+          269
+        ]
+      ]
+    }
+  }
+}
