@@ -14,7 +14,7 @@ def render_kpi_card(
     color: str = "#38BDF8",
 ) -> None:
     """Render a modern dark glassmorphic KPI card with hover animation."""
-    st.markdown(f"""
+    st.html(f"""
     <div class="sf-kpi-card">
         <div class="sf-kpi-label">
             <span>{icon}</span> {label}
@@ -26,7 +26,7 @@ def render_kpi_card(
             {subtext}
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    """)
 
 
 def render_status_banner(status_info: Dict[str, Any]) -> None:
@@ -50,7 +50,7 @@ def render_status_banner(status_info: Dict[str, Any]) -> None:
             SmartFlow Core Engine v2.4
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    """)
 
 
 def render_risk_gauge_panel(
@@ -108,7 +108,7 @@ def render_risk_gauge_panel(
         </div>
         """
 
-    st.html(f"""
+    st.markdown(f"""
     <div class="sf-glass-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
             <div style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; color: #94A3B8; text-transform: uppercase;">
@@ -146,7 +146,7 @@ def render_why_box(reasons: List[str]) -> None:
 
     items_html = "".join([f'<li style="margin-bottom: 6px; color: #E2E8F0;">{r}</li>' for r in reasons])
 
-    st.markdown(f"""
+    st.html(f"""
     <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 10px; padding: 1.1rem 1.4rem; margin-top: 1rem;">
         <div style="font-size: 0.8rem; font-weight: 700; color: #38BDF8; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 6px;">
             <span>🧠</span> WHY THIS EVALUATION?
